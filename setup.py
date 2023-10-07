@@ -5,13 +5,13 @@ with open('README.md', 'r', encoding='utf-8') as readme_file:
 
 setup(
     name='fast_pdf_gen',
-    version='1.0.0',
+    version='1.0.1',
     author='Houcem Eddine Saad',
     author_email='houcemsaad@gmail.com',
     description='A fast PDF generation package using Handlebars templates',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/yourusername/fast_pdf_gen',
+    url='https://github.com/saadhoucem/fast_pdf_gen',
     packages=find_packages(),
     install_requires=[
         'pybars3',  # Add other dependencies if needed
