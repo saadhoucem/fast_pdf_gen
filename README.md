@@ -26,10 +26,20 @@ template_key = 'template1'
 template_path_or_string = 'path/to/template.html'  # Or a template string
 context = {'variable': 'value'}
 compiled_template = compile_handlebars_template(template_key, template_path_or_string, context=context)
+#Options
+pdf_options = {
+    'format': 'A3',
+    'margin': {
+       'top': '10mm',
+       'right': '10mm',
+       'bottom': '10mm',
+       'left': '10mm'
+    }
+}
 
 # PDF Generation
 output_path = 'output.pdf'
-generate_pdf(template_key, compiled_template, output_path, context=context)
+generate_pdf(template_key, template_string, output_path, context=context, pdf_options=pdf_options)
 ```
 
 ### Options
