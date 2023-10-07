@@ -19,13 +19,12 @@ You can install the `fast_pdf_gen` package using `pip`:
 ## Usage
 
 ```python
-from fast_pdf_gen import compile_handlebars_template, generate_pdf
+from fast_pdf_gen import generate_pdf
 
 # Handlebars Template Compilation
 template_key = 'template1'
 template_path_or_string = 'path/to/template.html'  # Or a template string
 context = {'variable': 'value'}
-compiled_template = compile_handlebars_template(template_key, template_path_or_string, context=context)
 #Options
 pdf_options = {
     'format': 'A3',
